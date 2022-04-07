@@ -61,6 +61,15 @@ def crud_authorize():
     # show the auth user page if the above fails for some reason
     return render_template("authorize.html")
 
+# Log out routing
+@app_crud.route('/logout/', methods=["GET", "POST"])
+def crud_logout():
+    # check form inputs and creates user
+    # if request.form:
+        
+    # show the auth user page if the above fails for some reason
+    return redirect(url_for('crud.crud_login'))
+
 
 # CRUD create/add
 @app_crud.route('/create/', methods=["POST"])
