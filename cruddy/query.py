@@ -102,7 +102,7 @@ def authorize(name, email, password, phone):
             name=name,
             email=email,
             password=password,
-            phone=phone  # this should be added to authorize.html
+            phone=phone  # this should be added to s_authorize.html
         )
         # encrypt their password and add it to the auth_user object
         auth_user.create()

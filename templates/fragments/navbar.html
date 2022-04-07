@@ -112,6 +112,9 @@
                 <input type="checkbox" onclick="darkFunction()" class="form-check-input" id="darkSwitch">
                 <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
             </div>
+            <div class="px-1">
+                <a class="btn btn-primary" href={{url_for('crud.crud_logout')}}> Log Out </a>
+            </div>
         </div>
 
         {% block navbar_script %}
