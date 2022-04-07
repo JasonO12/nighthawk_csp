@@ -65,10 +65,9 @@ def crud_authorize():
 # Log out routing
 @app_crud.route('/logout/', methods=["GET", "POST"])
 def crud_logout():
-    # check form inputs and creates user
-    # if request.form:
-        
-    # show the auth user page if the above fails for some reason
+    # logs out user
+    logout()
+    # returns the log-in page for a new user session
     return redirect(url_for('crud.crud_login'))
 
 
